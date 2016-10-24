@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git://github.com/milindl/biojs-vis-dotplot.git"
   },
-  "bugs": {
+    "bugs": {
     "url": "https://github.com/milindl/biojs-vis-dotplot/issues"
   },
   "license": "Apache-2.0",
@@ -25,7 +25,7 @@
 		"lint": "jshint -c .jshintrc lib --verbose",
 		"w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
 		"sniper": "sniper .",
-		"install": "undefined && npm run css",
+		"install": "echo Nothing to do here && npm run css",
 		"css": "parcelify ./ -c build/bundle.css",
 		"watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
   },
@@ -40,10 +40,10 @@
 		"jshint": "^2.5.10"
   }, 
   "sniper": {
-    "js": [ "/build/dotplot.js"],
-    "css": ["/build/bundle.css"], 
-    "snippets": ["examples"],
-    "first": "simple"
+      "js": [ "/build/dotplot.js"],
+      "snippets": ["examples"],
+      "css": ["/css/main.css"],
+      "first": "simple"
    }, 
   "keywords": ["biojs","visualization","dotplot","protien","nucleotide","compare","biojs"]
 }
